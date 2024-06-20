@@ -4,23 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Veli.store</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>veli.store</title>
 </head>
 <body>
     <header>
-        <div class="first-line">
-            <a href="./gift.html">
-                <p class="head-line"> იშოპინგე ველიზე დასაჩუქრდი | 3500-მდე მომხმარებელმა უკვე აღმოაჩინა 🎁</p>
-            </a>
-            <div class="flex">
-                <p>GEO</p>
-                <p>ENG</p>
+        <div class="head-background">
+            <div class="language-switcher">
                 <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label>
+                    <input type="checkbox" id="languageToggle">
+                    <span class="slider"></span>
+                </label>
+                <span id="languageLabel">ENG</span>
+            </div>
+            <p id="switcher-text">Hello</p>
+        </div>
+       <div class="head-nav">
+        <div class="entire-nav">
+            <img class="logo" src="images/velillogo.png" alt="veli store logo">
+            <div class="box">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" id="search" name="seach" placeholder="რას ეძებ?">
+            </div>
+            <img class="gift-logo" src="images/veli-gift.png" alt="">
+            <div class="cart_container">
+                <div class="cart">
+                    <img class="cart_icon" src="images/grocery-store.png" alt="cart icon">
+                    <p class="cart_name">კალათა</p>
+                </div>
+                <div class="sign_up">
+                    <img class="sign_up_icon" src="images/user (1).png" alt="persons icon">
+                    <p class="sign_up_name">შესვლა</p>
+                </div>
             </div>
         </div>
     </header>
+    <script src="script.js"></script>
 </body>
 </html>
