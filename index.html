@@ -21,12 +21,18 @@
         </div>
        <div class="head-nav">
         <div class="entire-nav">
-            <img class="logo" src="images/velillogo.png" alt="veli store logo">
+            <a href="index.html">
+                <img class="logo" src="images/velillogo.png" alt="veli store logo">
+            </a>
             <div class="box">
-                <i class="fa fa-search" aria-hidden="true"></i>
-                <input type="text" id="search" name="seach" placeholder="რას ეძებ?">
+                <button id="searchButton" style="background: none; border: none; cursor: pointer;">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <input type="text" id="search" name="search" placeholder="რას ეძებ?">
             </div>
-            <img class="gift-logo" src="images/veli-gift.png" alt="">
+            <a href="#">
+                <img class="gift-logo" src="images/veli-gift.png" alt="">
+            </a>
             <div class="cart_container">
                 <div class="cart">
                     <img class="cart_icon" src="images/grocery-store.png" alt="cart icon">
@@ -39,6 +45,34 @@
             </div>
         </div>
     </header>
+    <section class="categories-list">
+     <div class="categories">
+        <div class="dropdown">
+            <button onclick="toggleDropdown()" class="dropbtn">
+                <img class="" src="images/burger icons.webp" alt="burger icon">
+                <span>ყველა კატეგორია</span>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="category-grid">
+                    <a href="#"><div class="category-item">ფასდაკლებები</div></a>
+                    <a href="#"><div class="category-item">ტექნიკა</div></a>
+                    <a href="#"><div class="category-item">სილამაზე & მოვლა</div></a>
+                    <a href="#"><div class="category-item">სახლი & ბაღი</div></a>
+                    <a href="#"><div class="category-item">ბარი & მევი</div></a>
+                    <a href="#"><div class="category-item">რემონტი & ხელსაწყოები</div></a>
+                    <a href="#"><div class="category-item">წიგნები</div></a>
+                    <a href="#"><div class="category-item">სათამაშოები</div></a>
+                    <a href="#"><div class="category-item">ცხოველების მოვლა</div></a>
+                    <a href="#"><div class="category-item">სპორტი & ჯანმრთელობა</div></a>
+                    <a href="#"><div class="category-item">ქორწილები</div></a>
+                    <a href="#"><div class="category-item">სამსახური</div></a>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+        </div>
+     </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
